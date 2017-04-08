@@ -88,7 +88,7 @@ function encode(num) {
 
 function padWithZero(encodedString, length) {
     var encodedStringLength = encodedString.length;
-    for(var i = encodedString; encodedStringLength < length; i++) {
+    for(var i = encodedStringLength; i < length; i++) {
         encodedString = "0" + encodedString;
     }
     return encodedString;

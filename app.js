@@ -10,6 +10,7 @@ var db = mongoose.connect('mongodb://localhost:27017');
 //models
 var Book = require('./models/bookModel');
 var Flavor = require('./models/flavorModel');
+var Nicotine = require('./models/nicotineModel');
 
 //init express
 var app = express();
@@ -27,6 +28,7 @@ app.use('/api/books', bookRouter);
 app.use('/api/flavors', flavorRouter);
 app.use('/api/nicotines', nicotineRouter);
 
+console.log(base32.padWithZero(base32.encode(322), 3), base32.decode(base32.padWithZero(base32.encode(322), 3)));
 
 //Listen,
 app.listen(port, function () {
